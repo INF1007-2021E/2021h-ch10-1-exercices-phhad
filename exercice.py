@@ -7,8 +7,10 @@ import numpy as np
 
 
 # TODO: Définissez vos fonctions ici (il en manque quelques unes)
+
+
 def linear_values() -> np.ndarray:
-    return np.array([])
+    return np.linspace(start=-1.3, stop=2.5, number=64)
 
 
 def coordinate_conversion(cartesian_coordinates: np.ndarray) -> np.ndarray:
@@ -21,5 +23,5 @@ def find_closest_index(values: np.ndarray, number: float) -> int:
 
 if __name__ == '__main__':
     # TODO: Appelez vos fonctions ici
-
+    print(linear_values())
     pass
