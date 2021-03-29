@@ -1,17 +1,6 @@
 test_closest (__main__.TestExercice) ... FAIL
 test_coordinates (__main__.TestExercice) ... FAIL
-test_linear_values (__main__.TestExercice) ... ERROR
-
-======================================================================
-ERROR: test_linear_values (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 15, in test_linear_values
-    output = list(exercice.linear_values())
-  File "/home/runner/work/2021h-ch10-1-exercices-phhad/2021h-ch10-1-exercices-phhad/exercice.py", line 13, in linear_values
-    return np.linspace(start=-1.3, stop=2.5, number=64)
-  File "<__array_function__ internals>", line 4, in linspace
-TypeError: _linspace_dispatcher() got an unexpected keyword argument 'number'
+test_linear_values (__main__.TestExercice) ... ok
 
 ======================================================================
 FAIL: test_closest (__main__.TestExercice)
@@ -43,4 +32,4 @@ Mauvaise réponse
 ----------------------------------------------------------------------
 Ran 3 tests in 0.004s
 
-FAILED (failures=2, errors=1)
+FAILED (failures=2)
