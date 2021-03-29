@@ -21,6 +21,7 @@ def coordinate_conversion(cartesian_coordinates: np.ndarray) -> np.ndarray:
 def find_closest_index(values: np.ndarray, number: float) -> int:
     values = np.ndarray([3,2,5])
     number = 1
+
     return 0
 
 
