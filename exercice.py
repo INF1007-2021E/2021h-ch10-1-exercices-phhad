@@ -27,17 +27,48 @@ def coordinate_conversion(cartesian_coordinates: np.ndarray) -> np.ndarray:
 
 
 def find_closest_index(values: np.ndarray, number: float) -> int:
-    values = np.ndarray([3,2,5])
-    number = 1,2
-    for i in range(3):
-        s
+    return np.abs(values - number).argmin
 
-    return 0
+    return
 
 def graph():
+    x = np.linspace(-1, 1, 250)
+    y = x**2 * np.sin(1/x**2) + x
+    plt.scatter(x, y)
+    plt.show()
 
+def Monte_Carlo(iteration: int=5000)
+    """""
+    x = np.linspace(0, 1, 5000)
+    y = np.linspace(0, 1, 5000)
+    if x > 1 and y > 1:
+        return np.array[x,y]
+    else:
+        return np.array[x,y]
 
+    plt.scatter(x, y)
+    plt.show()
+"""""
+    xlist_inside = []
+    xlist_out= []
+    ylist_inside = []
+    ylist_out = []
+    for i in range(iteration):
+        x = np.random.random()
+        y = np.random.random()
+        if np.sqrt(x**2 + y**2) <= 1:
+            xlist_inside.append(x)
+            ylist_inside.append(y)
+        else:
+            xlist_out.append(x)
+            ylist_out.append(y)
+    plt.scatter(xlist_inside, ylist_inside, label = "inside")
+    plt.scatter(xlist_out, ylist_out, label = "outside")
+    plt.legend()
+    plt.show()
+
+    return float(len(xlist_inside) / iteration*4)
 if __name__ == '__main__':
     # TODO: Appelez vos fonctions ici
     print(linear_values())
-    pass
+    print(Monte_Carlo())
